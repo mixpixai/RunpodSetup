@@ -25,3 +25,11 @@
   - Next Customize Deployment, Expose TCP Ports ==> `22, 8188`, Click `Set Overrides`. This will expose port 8188 so that you can use ComfyUI without tunneling.
   - [Optional] Choose Spot(Interruptible) if you want to spend less cost and don't mind interruptions.
   - Hit `Continue`
+ 
+- Next Launch the Jupiter Notebook and do the initial setup
+  - Open terminal
+  - `python -m venv venv`
+  - `source venv/bin/activate`
+  - `git clone https://github.com/mixpixai/RunpodSetup.git`
+  - `mv RunpodSetup/* .`
+  - `ipython comfyui_colab_v2.py`
