@@ -1,6 +1,5 @@
 #!/bin/bash
 apt update
-#apt install -y psmisc ffmpeg vim
 
 # by default the network volume is mounted to /runpod-volume in serverless, while /workspace in regular pods
 export RUNPOD_NETWORK_VOLUME_PATH="/workspace"
@@ -29,4 +28,3 @@ sleep 15;
 
 echo "runpod-worker-comfy: Starting RunPod Handler"
 python -u $RUNPOD_NETWORK_VOLUME_PATH/rp_handler.py
-
