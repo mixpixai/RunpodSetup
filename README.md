@@ -62,10 +62,22 @@
   - Tap `+ New Endpoint`
     - Give some endpoint name eg: `workflow_api`
     - Choose your preferred GPU workers.
-    - Confirm Active workes are 0 and Max workers are 3
+    - Confirm Active workes are 0 and Max workers are 3 or less.
+    - Keep idle timeout to be `300` or less.
     - Enable `Flashbot`
     - Continer Configuration - `Select the template from Step-5`
     - `IMP` - Advanced - Select your network volume.
     - Scale Type - You can choose Queue Delay or Request Count.
 
+- [Step -7] Get API key
+  - Go to `https://www.runpod.io/console/user/settings` and expand API_KEY
+  - Now tap on `+ API Key`
+  - Create a new Read API key and copy it.
+ 
+- [Step-8] Now make the curl call
+  - `curl -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR API KEY>" <YOUR SERVERLESS ENDPOINT> -d @request_body.json`
+  - eg: curl -H "Content-Type: application/json" -H "Authorization: Bearer INTL56110******" https://api.runpod.ai/v2/q47mbggytrqq9i/runsync -d @request_body.json
+
+Now your serverless endpoint is ready.
+NOTE: sometimes the first call might fail.
 
