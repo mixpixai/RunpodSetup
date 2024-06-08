@@ -34,7 +34,7 @@
   - `git clone https://github.com/mixpixai/RunpodSetup.git`
   - `mv RunpodSetup/* .`
   - `pip install runpod`
-  - `ipython comfyui_colab_v2.py`
+  - `ipython comfyui_colab_v2.ipynb`
  
 - [Step-4] [Making your workflow] If you need to make a new workflow or add some models you can follow these steps.
   -  Create your Pod as mentioned in Step-2
