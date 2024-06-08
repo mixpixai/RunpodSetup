@@ -33,6 +33,7 @@
   - `source venv/bin/activate`
   - `git clone https://github.com/mixpixai/RunpodSetup.git`
   - `mv RunpodSetup/* .`
+  - `mv essentials/* .`
   - `pip install runpod`
   - `ipython comfyui_colab_v2.ipynb`
  
@@ -54,6 +55,7 @@
     - Give some `name`
     - Choose `serverless` in template Type
     - Add your container Image. I am using `runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04`
+    - Container Start command `bash -c "cd  /runpod-volume; bash /runpod-volume/start_serverless.sh"`
     - Container Disk  `15 GB`
     - Hit `Save Template`
    
